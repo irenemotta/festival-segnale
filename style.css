@@ -225,5 +225,71 @@ h3 {
 .skip-link:focus {
   top: 1rem;
 }
+.luoghi-swiper {
+  --swiper-theme-color: var(--colore-primario);
+  max-width: 54rem;
+  margin-top: 1.5rem;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  border: 1px solid #b7c0b7;
+}
+
+.luoghi-swiper .swiper-slide {
+  margin: 0;
+}
+
+.luoghi-swiper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.luoghi-swiper figcaption {
+  padding: 1rem 1.25rem 1.5rem;
+}
+
+.luoghi-swiper figcaption span {
+  display: block;
+}
+.mappa-umap {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 24rem;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+}
+
+.sedi-elenco {
+  max-width: 54rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.sedi-elenco li {
+  margin-bottom: 1.25rem;
+}
+
+.sedi-elenco address {
+  font-style: normal;
+}
+
+.luoghi-swiper button:focus-visible {
+  outline: 3px solid var(--colore-testo);
+  outline-offset: 4px;
+}
+.brand {
+  font-size: 3.25rem;
+  letter-spacing: 0.02em;
+}
+
+.brand span {
+  color: var(--colore-primario);
+  font-family: var(--font-titoli);
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: capitalize;
+}
 
 /* Qui aggiungeremo la media query durante la demo. */
