@@ -45,6 +45,10 @@ a:focus-visible {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--colore-sfondo);
   padding: 1.25rem 0;
   border-bottom: 4px solid var(--colore-primario);
 }
@@ -66,13 +70,15 @@ a:focus-visible {
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
   margin-top: 1rem;
 }
 
 nav a {
-  display: inline-block;
-  margin-right: 1rem;
-  padding: 0.25rem 0;
+  display: block;
+  padding: 0.5rem 0;
 }
 
 nav a[aria-current="page"] {
@@ -279,17 +285,39 @@ h3 {
   outline-offset: 4px;
 }
 .brand {
-  font-size: 3.25rem;
+  font-size: 1.75rem;
   letter-spacing: 0.02em;
 }
 
 .brand span {
   color: var(--colore-primario);
   font-family: var(--font-titoli);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.08em;
   text-transform: capitalize;
 }
 
-/* Qui aggiungeremo la media query durante la demo. */
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+@media (min-width: 600px) {
+  nav {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 0.25rem 0;
+  }
+}
