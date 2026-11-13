@@ -115,19 +115,23 @@
       <p>Segnale · Progetto didattico · Festival immaginario</p>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
 <script>
-  const swiper = new Swiper('.luoghi-swiper', {
-    slidesPerView: 1,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    a11y: {
-      prevSlideMessage: 'Sede precedente',
-      nextSlideMessage: 'Sede successiva'
+  document.addEventListener('DOMContentLoaded', () => {
+    const galleria = document.querySelector('.luoghi-swiper');
+
+    if (typeof Swiper === 'undefined') {
+      console.error('Swiper non è stato caricato.');
+      return;
     }
+
+    new Swiper(galleria, {
+      slidesPerView: 1,
+      navigation: {
+        nextEl: galleria.querySelector('.swiper-button-next'),
+        prevEl: galleria.querySelector('.swiper-button-prev')
+      }
+    });
   });
 </script>
-</body>
-</html>
+

@@ -3,12 +3,15 @@
 
 /* Scelte comuni: ogni regola usa var() per richiamarne il valore. */
 :root {
-  --colore-primario: #315a73;
+  --colore-primario: #4583BB;
 --colore-primario-scuro: #23465c;
-  --colore-sfondo: #f5f2e9;
+  --colore-sfondo: #ffffff;
   --colore-testo: #202923;
   --font-testo: "Trebuchet MS", Arial, sans-serif;
 --font-titoli: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+h1 {
+  font-family: "Bagel Fat One", sans-serif;
+}
 
 }
 
@@ -48,15 +51,15 @@ a:focus-visible {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--colore-sfondo);
+  background: #E2622E;
   padding: 1.25rem 0;
-  border-bottom: 4px solid var(--colore-primario);
+  border-bottom: 0px solid var(--colore-testo);
 }
 
 .brand {
   display: inline-block;
   color: var(--colore-testo);
-  font-size: 1.75rem;
+  font-size: 4.75rem;
   font-weight: bold;
   line-height: 1.2;
   text-decoration: none;
@@ -64,8 +67,8 @@ a:focus-visible {
 
 .brand span {
   display: block;
-  margin-top: 0.25rem;
-  font-size: 0.875rem;
+  margin-top: 1.25rem;
+  font-size: 1.2rem;
   font-weight: normal;
 }
 
@@ -79,6 +82,7 @@ nav {
 nav a {
   display: block;
   padding: 0.5rem 0;
+  color: #ffffff
 }
 
 nav a[aria-current="page"] {
@@ -86,7 +90,7 @@ nav a[aria-current="page"] {
 }
 
 .intro {
-  padding: 3rem 0 1rem;
+  padding: 2rem 0 1rem;
 }
 
 .eyebrow,
@@ -285,18 +289,18 @@ h3 {
   outline-offset: 4px;
 }
 .brand {
-  font-size: 1.75rem;
-  letter-spacing: 0.02em;
+  font-family: "Bagel Fat One", cursive;
+  color: #F7EFE9;
 }
 
 .brand span {
-  color: var(--colore-primario);
-  font-family: var(--font-titoli);
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.08em;
-  text-transform: capitalize;
+  display: block;
+  font-family: var(--font-testo);
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: none;
 }
+
 
 nav {
   display: flex;
